@@ -13,6 +13,16 @@ Pod::Spec.new do |s|
 
   s.platform     = :ios, "7.0"
 
+s.subspec 'Core' do |core|
+    core.source_files = 'Classes/*.{h,m}'
+    core.public_header_files = 'Classes/*.h'
+end
+
+s.subspec 'Utiles' do |utiles|
+    utils.source_files = 'Classes/Utiles/*'
+    utils.public_header_files = 'Classes/Utiles/*.h'
+end
+
   s.source_files  = "Classes/*.{h,m}"
 
   s.public_header_files = "Classes/*.h"
@@ -23,8 +33,7 @@ Pod::Spec.new do |s|
 
   s.requires_arc = true
 
-  s.dependency "FXLog", "~> 1.0.3"
-  s.dependency "FXJson", "~> 1.0.0"
-  s.dependency "AFNetworking", "~> 3.1.0"
+  s.dependency "FXLog"
+  s.dependency "FXJson"
 
 end
