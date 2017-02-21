@@ -25,7 +25,6 @@ Pod::Spec.new do |s|
 
   s.dependency "FXLog", "~> 1.0.3"
   s.dependency "FXJson", "~> 1.0.0"
-  s.dependency "FXHttpAPI", "~> 1.0.0"
   s.dependency "AFNetworking", "~> 3.1.0"
 
 end
