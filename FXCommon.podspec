@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "FXCommon"
-  s.version      = "1.0.1"
+  s.version      = "1.0.2"
   s.summary      = "FX通用组件"
 
   s.homepage     = "https://github.com/zqw87699/FXCommon"
@@ -14,8 +14,8 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "7.0"
 
 s.subspec 'Core' do |core|
-    core.source_files = 'Classes/*.{h,m}'
-    core.public_header_files = 'Classes/*.h'
+    core.source_files = 'Classes/Core/*'
+    core.public_header_files = 'Classes/Core/*.h'
 end
 
 s.subspec 'Utiles' do |utiles|
