@@ -19,13 +19,9 @@ s.subspec 'Core' do |core|
 end
 
 s.subspec 'Utiles' do |utiles|
-    utils.source_files = 'Classes/Utiles/*'
-    utils.public_header_files = 'Classes/Utiles/*.h'
+    utiles.source_files = 'Classes/Utiles/*'
+    utiles.public_header_files = 'Classes/Utiles/*.h'
 end
-
-  s.source_files  = "Classes/*.{h,m}"
-
-  s.public_header_files = "Classes/*.h"
 
   s.frameworks = "Foundation", "UIKit"
 
