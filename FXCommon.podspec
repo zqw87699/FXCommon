@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "FXCommon"
-  s.version      = "1.0.3"
+  s.version      = "1.0.4"
   s.summary      = "FX通用组件"
 
   s.homepage     = "https://github.com/zqw87699/FXCommon"
@@ -12,6 +12,14 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/zqw87699/FXCommon.git", :tag => "#{s.version}"}
 
   s.platform     = :ios, "7.0"
+
+s.subspec 'Base' do |base|
+    base.source_files = 'Classes/Base/*'
+    base.public_header_files = 'Classes/Base/*.h'
+
+    base.dependency 'FXJson'
+    base.dependency 'FXHttpAPI/API'
+end
 
 s.subspec 'Core' do |core|
     core.source_files = 'Classes/Core/*'
@@ -30,6 +38,5 @@ end
   s.requires_arc = true
 
   s.dependency "FXLog"
-  s.dependency "FXJson"
 
 end
