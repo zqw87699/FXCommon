@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "FXCommon"
-  s.version      = "1.0.6"
+  s.version      = "1.0.7"
   s.summary      = "FX通用组件"
 
   s.homepage     = "https://github.com/zqw87699/FXCommon"
@@ -18,8 +18,8 @@ s.subspec 'Base' do |base|
     base.public_header_files = 'Classes/Base/*.h'
 
     base.dependency 'FXJson'
-    base.dependency 'FXHttpAPI/API'
-    base.dependency 'FXRoutable/API'
+    base.dependency 'FXHttpAPI'
+    base.dependency 'FXRoutableAPI'
     base.dependency 'Masonry', '1.0.2'
 
 end
