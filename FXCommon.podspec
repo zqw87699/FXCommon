@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "FXCommon"
-  s.version      = "1.0.8"
+  s.version      = "1.0.9"
   s.summary      = "FX通用组件"
 
   s.homepage     = "https://github.com/zqw87699/FXCommon"
@@ -20,6 +20,7 @@ s.subspec 'Base' do |base|
     base.dependency 'FXJson'
     base.dependency 'FXHttpAPI'
     base.dependency 'FXRoutableAPI'
+    base.dependency 'FXWebViewJavaScriptBridge'
     base.dependency 'Masonry', '1.0.2'
 
 end
@@ -39,7 +40,7 @@ s.subspec 'SwipeBack' do |swipeback|
     swipeback.public_header_files = 'Classes/SwipeBack/*.h'
 end
 
-  s.frameworks = "Foundation", "UIKit"
+  s.frameworks = "Foundation", "UIKit" , "WebKit"
 
   s.module_name = 'FXCommon' 
 
