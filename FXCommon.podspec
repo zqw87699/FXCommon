@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "FXCommon"
-  s.version      = "1.0.7"
+  s.version      = "1.0.8"
   s.summary      = "FX通用组件"
 
   s.homepage     = "https://github.com/zqw87699/FXCommon"
@@ -32,6 +32,11 @@ end
 s.subspec 'Utiles' do |utiles|
     utiles.source_files = 'Classes/Utiles/*'
     utiles.public_header_files = 'Classes/Utiles/*.h'
+end
+
+s.subspec 'SwipeBack' do |swipeback|
+    swipeback.source_files = 'Classes/SwipeBack/*'
+    swipeback.public_header_files = 'Classes/SwipeBack/*.h'
 end
 
   s.frameworks = "Foundation", "UIKit"
