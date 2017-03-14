@@ -1,14 +1,14 @@
 //
-//  UIScrollView+Extension.m
+//  UIScrollView+FXExtension.m
 //  TTTT
 //
 //  Created by 张大宗 on 2017/3/3.
 //  Copyright © 2017年 张大宗. All rights reserved.
 //
 
-#import "UIScrollView+Extension.h"
+#import "UIScrollView+FXExtension.h"
 
-@implementation UIScrollView (Extension)
+@implementation UIScrollView (FXExtension)
 
 - (float)fx_contentInsetTop{
     return self.contentInset.top;

@@ -1,5 +1,5 @@
 //
-//  NSArray+Extension.h
+//  NSArray+FXExtension.h
 //  TTTT
 //
 //  Created by 张大宗 on 2017/3/3.
@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSArray (Extension)
+@interface NSArray (FXExtension)
 
 /**
  *  随机一个元素

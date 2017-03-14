@@ -1,5 +1,5 @@
 //
-//  UIScrollView+Extension.h
+//  UIScrollView+FXExtension.h
 //  TTTT
 //
 //  Created by 张大宗 on 2017/3/3.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIScrollView (Extension)
+@interface UIScrollView (FXExtension)
 
 /**
  *  修改contentInset.top

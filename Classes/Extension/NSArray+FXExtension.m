@@ -1,14 +1,14 @@
 //
-//  NSArray+Extension.m
+//  NSArray+FXExtension.m
 //  TTTT
 //
 //  Created by 张大宗 on 2017/3/3.
 //  Copyright © 2017年 张大宗. All rights reserved.
 //
 
-#import "NSArray+Extension.h"
+#import "NSArray+FXExtension.h"
 
-@implementation NSArray (Extension)
+@implementation NSArray (FXExtension)
 
 - (id)random{
     if (self.count == 0) return nil;
