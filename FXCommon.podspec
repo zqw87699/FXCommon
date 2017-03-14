@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "FXCommon"
-  s.version      = "1.0.9"
+  s.version      = "1.1.0"
   s.summary      = "FX通用组件"
 
   s.homepage     = "https://github.com/zqw87699/FXCommon"
@@ -28,6 +28,11 @@ end
 s.subspec 'Core' do |core|
     core.source_files = 'Classes/Core/*'
     core.public_header_files = 'Classes/Core/*.h'
+end
+
+s.subspec 'Extension' do |extension|
+    extension.source_files = 'Classes/Extension/*'
+    extension.public_header_files = 'Classes/Extension/*.h'
 end
 
 s.subspec 'Utiles' do |utiles|
