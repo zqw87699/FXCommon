@@ -15,4 +15,9 @@
  */
 - (id)random;
 
+/**
+ * 遍历所有元素
+ */
+- (void) fx_each:(void (^)(id object))block;
+
 @end
