@@ -34,6 +34,10 @@
     return self;
 }
 
+-(void)fx_loadView{
+    
+}
+
 +(instancetype) fx_instance {
     BaseFXView *instance = nil;
     @try {
