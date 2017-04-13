@@ -10,6 +10,42 @@
 
 @implementation BaseFXTableCell
 
+- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
+    self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
+    if (self) {
+        [self fx_loadView];
+    }
+    return self;
+}
+
+- (instancetype)init{
+    self = [super init];
+    if (self) {
+        [self fx_loadView];
+    }
+    return self;
+}
+
+- (instancetype)initWithFrame:(CGRect)frame{
+    self = [super initWithFrame:frame];
+    if (self) {
+        [self fx_loadView];
+    }
+    return self;
+}
+
+- (instancetype)initWithCoder:(NSCoder *)aDecoder{
+    self = [super initWithCoder:aDecoder];
+    if (self) {
+        [self fx_loadView];
+    }
+    return self;
+}
+
+- (void)fx_loadView{
+    
+}
+
 +(instancetype) fx_instance {
     BaseFXTableCell *instance = nil;
     @try {

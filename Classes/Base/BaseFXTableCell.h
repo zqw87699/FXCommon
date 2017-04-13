@@ -24,4 +24,9 @@
  */
 +(instancetype) fx_instance;
 
+/**
+ *  加载页面
+ */
+-(void)fx_loadView;
+
 @end

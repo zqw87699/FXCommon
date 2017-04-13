@@ -12,4 +12,6 @@
 
 +(instancetype) fx_instance;
 
+-(void)fx_loadView;
+
 @end
