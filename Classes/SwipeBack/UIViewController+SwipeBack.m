@@ -23,8 +23,8 @@
 //
 
 #import <objc/runtime.h>
-#import "UINavigationController+SwipeBack.h"
 #import "UIViewController+SwipeBack.h"
+#import "FXSwizzle.h"
 
 @implementation UIViewController (SwipeBack)
 
@@ -32,7 +32,7 @@
 {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        __swipeback_swizzle(self, @selector(viewDidAppear:));
+        __swizzle(self, @selector(viewDidAppear:));
     });
 }
 
