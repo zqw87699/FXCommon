@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "FXCommon"
-  s.version      = "1.2.1"
+  s.version      = "1.2.2"
   s.summary      = "FX通用组件"
 
   s.homepage     = "https://github.com/zqw87699/FXCommon"
